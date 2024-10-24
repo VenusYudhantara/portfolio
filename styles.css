@@ -1,48 +1,48 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #0073b1;
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
 }
 
 section {
-    padding: 2em;
-    margin: 2em 0;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px 0;
 }
 
-#contact .social-links {
-    list-style-type: none;
-    padding: 0;
+/* Navbar */
+.navbar {
+    margin-bottom: 50px;
 }
 
-#contact .social-links li {
-    display: inline-block;
-    margin-right: 1em;
+/* Home Section */
+#home {
+    background-color: #f8f9fa;
+    padding: 100px 0;
 }
 
-#contact .social-links a {
-    text-decoration: none;
-    color: #0073b1;
+/* Projects */
+#projects .row {
+    margin-top: 30px;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    img {
+        width: 150px;
+    }
 }
