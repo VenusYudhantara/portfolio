@@ -1,90 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="text-center">
-        <img src="img/foto.jpg" alt="Profile Picture" class="rounded-circle" width="200">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Creative Developer</p>
-    </section>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
 
-    <!-- About Me Section -->
-    <section id="about" class="container text-center">
-        <h2>About Me</h2>
-        <p>Hi, I'm a passionate web developer with a keen interest in creating interactive and responsive web experiences.</p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="container text-center">
-        <h2>Education</h2>
-        <ul>
-            <li>Bachelor of Computer Science - XYZ University (2020-2024)</li>
-            <li>High School - ABC School (2017-2020)</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <img src="img/project1.jpg" class="img-fluid" alt="Project 1">
-                <p>Project 1 Description</p>
+    <section class="home">
+        <div class="home-info">
+            <h1>Venus Yudhantara</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Website Developer">Website Developer</span>
+                <span style="--i:3;" data-text="Student">Student</span>
+                <span style="--i:2;" data-text="Basketball Player">Basketball Player</span>
+                <span style="--i:1;" data-text="Eca's Boyfriend">Eca's Boyfriend</span>
+            </h2>
+            <p></p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="https://www.linkedin.com/in/venus-yudhantara-b5905b286/"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.instagram.com/venusyudhantaraa/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/08775549315"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <img src="img/project2.jpg" class="img-fluid" alt="Project 2">
-                <p>Project 2 Description</p>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="foto.png" alt="">
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="container text-center">
-        <h2>Portfolio</h2>
-        <p>View my full portfolio on <a href="https://github.com/yourusername">GitHub</a></p>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact" class="container text-center">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>Phone: +123 456 7890</p>
-    </section>
-
-    <!-- Footer with Social Media Links -->
-    <footer class="text-center">
-        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a> |
-        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a> |
-        <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
+
 </html>
